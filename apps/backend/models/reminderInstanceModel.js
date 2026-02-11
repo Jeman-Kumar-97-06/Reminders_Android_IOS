@@ -51,6 +51,7 @@ const ReminderInstanceSchema = new mongoose.Schema(
       default: null,
     },
 
+    //
     status: {
       type: String,
       enum: ["pending", "done", "skipped", "missed"],
