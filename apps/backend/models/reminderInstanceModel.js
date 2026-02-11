@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
 
+//Remiders today : 
 const ReminderInstanceSchema = new mongoose.Schema(
   {
+    //Who belongs this to ?
     userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "ReminderUser",
@@ -9,6 +11,7 @@ const ReminderInstanceSchema = new mongoose.Schema(
       index: true,
     },
 
+    //What is the templateId ?
     templateId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "ReminderTemplate",
